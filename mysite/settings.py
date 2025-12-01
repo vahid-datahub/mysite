@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "website",
+    # or our addressing could be like this: (being more specific)
+    # "website.apps.WebsiteConfig",
 ]
 
 MIDDLEWARE = [

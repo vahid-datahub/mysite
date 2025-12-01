@@ -16,8 +16,15 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+
+    # we say if we noticed at website, go and check website's urls
+    # path("website/", include("website.urls"))
+    # when we describe nothing we actually are saying go to home or first page
+    path("", include("website.urls"))
+
 ]
